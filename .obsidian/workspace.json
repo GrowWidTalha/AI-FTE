@@ -1,0 +1,207 @@
+{
+  "main": {
+    "id": "800824be968be2a1",
+    "type": "split",
+    "children": [
+      {
+        "id": "a796be90cd95b3ce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1cd0f701fd4702a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dashboard.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Dashboard"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8e587caf7ea5a0cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa891587fffcc455",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "86ca2414e621425d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f38916c8f2331402",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "86c61298e587a328",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "011e3b926bae4a1b",
+    "type": "split",
+    "children": [
+      {
+        "id": "4a7b6ea43d5127b8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4bdebd28af828d18",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Dashboard.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Dashboard"
+            }
+          },
+          {
+            "id": "9ee8dd405ce95c0b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Dashboard.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Dashboard"
+            }
+          },
+          {
+            "id": "a9ab5d3b813e163f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "a4eb598741172a13",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "0d2c6bd62cf2c0ef",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Dashboard.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Dashboard"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "1cd0f701fd4702a7",
+  "lastOpenFiles": [
+    "Business_Goals.md",
+    "Inbox/FRESH_TASK_1771655176.md",
+    "scripts/CLAUDE.md.tmp",
+    "scripts/main.py.tmp.2173.1771655360675",
+    "Inbox/Processed/CLAUDE.md",
+    "scripts/main.py.tmp.2173.1771655354225",
+    "Needs_Action/CLAUDE.md.tmp",
+    "Inbox/Test note.md.md",
+    "Inbox/Processed/CLAUDE.md.tmp",
+    "Needs_Action/CLAUDE.md",
+    "Inbox/Processed/polling_test_1771655325.txt",
+    "Needs_Action/FILE_polling_test_1771655325.md",
+    "Needs_Action/FILE_polling_test_1771655325.txt",
+    "Inbox/polling_test_1771655325.txt",
+    "Inbox/Processed",
+    "scripts/watchers/CLAUDE.md.tmp",
+    "scripts/mcp_servers/CLAUDE.md",
+    "scripts/CLAUDE.md"
+  ]
+}

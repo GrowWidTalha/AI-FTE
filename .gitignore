@@ -1,0 +1,53 @@
+# Environment and Secrets
+.env
+credentials.json
+token.json
+whatsapp_session/
+*.pem
+*.key
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+uv.lock
+
+# Logs
+*.log
+logs/
+Logs/*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Session files
+*.session
+*.pid
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Claude triggers
+.claude_trigger.txt
+
+# Obsidian
+.obsidian/workspace-mobile
+.obsidian/workspace
+
+# Claude Code project cache
+.claude/projects/

@@ -1,0 +1,9 @@
+{
+  "servers": [
+    {
+      "name": "filesystem",
+      "command": "npx",
+      "args": ["-y", "@anthropic-ai/mcp-server-filesystem", "/mnt/d/class/AI_EMPLOYEE_FTE"]
+    }
+  ]
+}

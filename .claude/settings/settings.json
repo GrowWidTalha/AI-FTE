@@ -1,0 +1,10 @@
+{
+  "terminal": {
+    "shell": "bash"
+  },
+  "autoApproval": {
+    "dangerous": false,
+    "writeToFile": true
+  },
+  "workingDirectory": "/mnt/d/class/AI_EMPLOYEE_FTE"
+}
