@@ -1,88 +1,197 @@
-# Turbo Launch AI Employee Vault
+# 🤖 AI Employee - Autonomous Digital FTE
 
-This Obsidian vault serves as the **Memory and GUI** for your Personal AI Employee.
+> A fully autonomous AI employee that manages your business 24/7 using Claude Code, Obsidian, and Python.
 
-## Project Location
+[![Python 3.13+](https://img.shields.io/badge/python-3.13+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Claude Code](https://img.shields.io/badge/Claude_Code-4.6-purple.svg)](https://claude.ai/claude-code)
 
-- **WSL Path:** `/mnt/d/class/AI_EMPLOYEE_FTE`
-- **Windows Path:** `D:\class\AI_EMPLOYEE_FTE`
-- **Obsidian:** Open this folder as a vault
+## 🎯 What Is This?
 
-## Vault Structure
+An **AI Employee** that acts as a full-time equivalent (FTE) for your business. It watches your inboxes, processes tasks, communicates with customers, and manages operations - all while following your company handbook.
 
-```
-AI_EMPLOYEE_FTE/
-├── Dashboard.md           # Main overview and status
-├── Company_Handbook.md    # Rules of engagement
-├── Business_Goals.md      # Targets and metrics
-├── .claude/               # Claude Code local configuration
-│   ├── skills/            # Agent skills (process-inbox, gmail-triage, etc.)
-│   ├── settings/          # Claude Code settings (mcp.json, etc.)
-│   └── hooks/             # Stop hooks (Ralph Wiggum loop)
-├── Needs_Action/          # Tasks requiring AI attention
-├── In_Progress/           # Tasks currently being worked on
-├── Plans/                 # AI-generated execution plans
-├── Pending_Approval/      # Items awaiting human approval
-├── Approved/              # Approved actions ready to execute
-├── Rejected/              # Rejected actions
-├── Done/                  # Completed tasks
-├── Inbox/                 # Raw inputs from watchers
-├── Updates/               # Cloud agent updates (Platinum tier)
-├── Briefings/             # Weekly CEO briefings
-├── Accounting/            # Financial records
-├── Invoices/              # Generated invoices
-├── Logs/                  # Activity logs (YYYY-MM-DD.json)
-├── Skills/                # Skill definitions (legacy)
-├── sessions/              # Claude Code session history
-└── scripts/               # Watchers, MCP servers, orchestrator
-    ├── watchers/          # Python watcher scripts
-    ├── mcp_servers/       # MCP server implementations
-    └── orchestrator/      # Orchestration logic
-```
-
-## How It Works
-
-1. **Watchers** detect new activity (email, WhatsApp, files)
-2. They create files in `/Inbox` or `/Needs_Action`
-3. **Claude Code** reads these files and follows Company_Handbook.md rules
-4. Claude creates plans in `/Plans` and approval requests in `/Pending_Approval`
-5. **You** review and move items to `/Approved` or `/Rejected`
-6. **MCP Servers** execute approved actions
-7. Completed items move to `/Done` with logs
-
-## Getting Started
-
-### In WSL/Linux
-
-```bash
-cd /mnt/d/class/AI_EMPLOYEE_FTE
-claude --cwd .
-```
-
-### In Windows (PowerShell/CMD)
-
-```powershell
-cd D:\class\AI_EMPLOYEE_FTE
-claude --cwd .
-```
-
-Claude Code will now read and write to this vault.
-
-## Tier Progress
-
-- [x] **Bronze:** Vault structure, Dashboard, Handbook, Skills folder
-- [ ] **Silver:** Watchers, MCP integration, HITL workflow
-- [ ] **Gold:** Full integration, Odoo, Ralph Wiggum loop
-- [ ] **Platinum:** Cloud deployment, work-zone specialization
-
-## Important Notes
-
-- **Never commit** sensitive files (.env, credentials.json, token.json)
-- **Keep Dashboard.md** open in Obsidian for real-time updates
-- **Review Pending_Approval** folder regularly
-- **Check Logs/** folder to monitor AI activity
-- **Windows Task Scheduler** will be used for automation (Tier 2+)
+Built for **Turbo Launch** - helping founders launch MVPs in 15 days.
 
 ---
 
-*This is your AI Employee's brain. Keep it organized and secure.*
+## 🏗️ Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                         AI Employee                             │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│  ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐      │
+│  │  Senses │───►│   Brain │───►│  Hands  │───►│  Memory │      │
+│  │Watchers │    │  Claude │    │   MCP   │    │Obsidian │      │
+│  └─────────┘    │  Code   │    │ Servers │    │  Vault  │      │
+│                 └─────────┘    └─────────┘    └─────────┘      │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+| Layer | Technology | Purpose |
+|-------|-----------|---------|
+| **Senses** | Python Watchers | Monitor email, files, messages |
+| **Brain** | Claude Code | Reasoning, decision making |
+| **Hands** | MCP Servers | Execute actions (send email, post, etc.) |
+| **Memory** | Obsidian Vault | Long-term knowledge, logs, plans |
+
+---
+
+## ✨ Features
+
+### Bronze Tier (Current - ✅ Complete)
+- ✅ Obsidian vault with Dashboard & Company Handbook
+- ✅ File watcher (drop files → auto-process)
+- ✅ 5 Agent Skills (process-inbox, gmail-triage, update-dashboard, create-plan, draft-reply)
+- ✅ Claude Code integration with local skills
+
+### Silver Tier (Next)
+- 🔄 Gmail watcher with OAuth
+- 🔄 MCP servers for email, browser automation
+- 🔄 Human-in-the-Loop approval workflow
+- 🔄 Orchestrator for automatic triggering
+
+### Gold Tier
+- ⏳ Odoo accounting integration
+- ⏳ Social media posting (LinkedIn, Twitter, Instagram)
+- ⏳ Ralph Wiggum persistence loop
+
+### Platinum Tier
+- ⏳ Cloud 24/7 deployment
+- ⏳ Work-zone specialization
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- [Python 3.13+](https://www.python.org/downloads/)
+- [UV](https://github.com/astral-sh/uv) (Python package manager)
+- [Claude Code](https://claude.ai/claude-code)
+- [Obsidian](https://obsidian.md) (optional, for GUI)
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/GrowWidTalha/AI-FTE.git
+cd AI-FTE
+
+# Install dependencies
+uv sync
+
+# Set up environment
+cp .env.example .env
+# Edit .env with your credentials
+```
+
+### Usage
+
+```bash
+# Show help
+uv run ai-employee
+
+# Start file watcher
+uv run ai-watch
+
+# Start orchestrator
+uv run ai-orchestrate
+```
+
+### With Claude Code
+
+```bash
+# Start Claude Code in the project directory
+claude --cwd .
+
+# Try skills
+/update-dashboard
+/process-inbox
+/create-plan
+```
+
+---
+
+## 📁 Project Structure
+
+```
+AI-FTE/
+├── .claude/                  # Claude Code config
+│   ├── skills/               # Agent skills
+│   └── settings/             # MCP & working dir
+├── scripts/                  # Python package
+│   ├── watchers/             # File, Gmail, WhatsApp watchers
+│   ├── mcp_servers/          # MCP implementations
+│   └── orchestrator/         # Coordination logic
+├── Dashboard.md              # Live overview
+├── Company_Handbook.md       # Rules of engagement
+├── Business_Goals.md         # Targets & metrics
+├── Needs_Action/             # Tasks needing attention
+├── In_Progress/              # Active work
+├── Done/                     # Completed tasks
+└── pyproject.toml            # UV project config
+```
+
+---
+
+## 🧪 Testing
+
+```bash
+# 1. Start the file watcher
+uv run ai-watch
+
+# 2. In another terminal, drop a test file
+echo "Task: Review the handbook" > Inbox/test.txt
+
+# 3. Watch it appear in Needs_Action/ automatically!
+```
+
+---
+
+## 📚 How It Works
+
+1. **Watchers** detect new activity (files dropped, emails received)
+2. They create action files in `/Needs_Action`
+3. **Claude Code** reads these files and follows `Company_Handbook.md` rules
+4. Claude creates plans in `/Plans` or drafts in `/Pending_Approval`
+5. **You** review and approve/reject
+6. **MCP Servers** execute approved actions
+7. Completed items move to `/Done` with logs
+
+---
+
+## 🛠️ Tech Stack
+
+- **Python 3.13+** with UV package manager
+- **Claude Code** for AI reasoning
+- **Obsidian** for memory & GUI
+- **Google APIs** for Gmail (Silver tier)
+- **Watchdog** for file monitoring
+- **MCP** for tool integration
+
+---
+
+## 📝 License
+
+MIT License - see [LICENSE](LICENSE) for details.
+
+---
+
+## 🤝 Contributing
+
+Contributions welcome! Feel free to open issues or PRs.
+
+---
+
+## 🌟 Star History
+
+If you find this useful, please star the repo!
+
+---
+
+**Built with ❤️ for Turbo Launch**
+
+*MVPs in 15 days or less*
